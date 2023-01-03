@@ -15,18 +15,24 @@ function Availability({ setCamp, camp, availability, totalAmountSpots }) {
 
   // console.log("isEnough", isEnough);
 
+  // function setColorOnCamp() {
+  //   e.target.className={"chosen-camp"}
+  // }
+
   return (
     <>
       <h2>Camps</h2>
       <div className="center-p">You need a camp that has at least {totalAmountSpots} free spots for your party.</div>
       <div className="camps-grid">
         {Object.values(availability).map((availability, index) => (
-          <div className="camp-wrap" key={index}>
+          <div className={"camp-wrap"} key={index}>
             {isEnough(availability.available) ? (
               <div className="camp-name-wrap">
-                <div id={availability.area} className="camp"></div>
+                <div id={availability.area} className={"camp"}></div>
                 <h2>
-                  <button onClick={() => setCamp(availability.area)}>{availability.area}</button>
+                  <button className={camp === availability.area ? "chosen" : ""} onClick={() => setCamp(availability.area)}>
+                    {availability.area}
+                  </button>
                 </h2>
                 {availability.area === "Svartheim" && <p className="desc center-p">{svartheimDesc}</p>}
                 {availability.area === "Nilfheim" && <p className="desc center-p">{nilfheimDesc}</p>}
