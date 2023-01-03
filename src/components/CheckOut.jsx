@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Basket from "./booking_components/Basket";
 import CreditCardForm from "./booking_components/CreditCardForm";
+
 import { useState } from "react";
 import MobilePayForm from "./booking_components/MobilePayForm";
 import PrimaryButton from "./PrimaryButton";
@@ -88,6 +89,7 @@ function CheckOut({ allPersoData, trioAmount, duoAmount, isGreen, ownTents, vipA
       </div>
 
       {payementCard && <CreditCardForm makeReservation={makeReservation} saveForm={saveForm} payementCard={payementCard} />}
+
       {!payementCard && <MobilePayForm makeReservation={makeReservation} saveForm={saveForm} payementCard={payementCard} />}
     </div>
   );

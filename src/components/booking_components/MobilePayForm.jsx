@@ -35,18 +35,20 @@ function MobilePayForm({ saveForm, submitAll, payementCard, makeReservation }) {
 
   return (
     <form className="mobilepay-form" onChange={handleChange} onSubmit={submit} ref={Form}>
-      <h3>MobilePay Info</h3>
-      <InputText
-        type="text"
-        label="mobile"
-        id="mobile"
-        name="mobile"
-        errormessage="  - Enter a valid mobile number"
-        placeholder={"42 06 66 69"}
-        pattern="(\+?\d*\s*)*"
-        required={true}
-      ></InputText>
-      <PrimaryButton disabled={disableMe} desc={"PAY NOW"} clickAction={submit}></PrimaryButton>
+      <fieldset className="field-wrap">
+        <h3>MobilePay Info</h3>
+        <InputText
+          type="text"
+          label="Phone number :"
+          id="mobile"
+          name="mobile"
+          errormessage="  - Enter a valid mobile number"
+          placeholder={"42 06 66 69"}
+          pattern="(\+?\d*\s*)*"
+          required={true}
+        ></InputText>
+        <PrimaryButton disabled={disableMe} desc={"PAY NOW"} clickAction={submit}></PrimaryButton>
+      </fieldset>
     </form>
   );
 }

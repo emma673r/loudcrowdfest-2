@@ -59,24 +59,27 @@ function CreditCardForm(props) {
 
   return (
     <form className="credit-form" onChange={handleChange} onSubmit={submitCard} ref={Form}>
-      <fieldset>
+      <fieldset className="field-wrap">
         <h3>Card information :</h3>
-        <fieldset>
-          <label htmlFor="name">Name on card :</label>
-          <input required={true} onInput={handleInput} id="name" name="name" type="text" placeholder="Jane Doe" />
+        <div className="indentification">
+          <fieldset>
+            <label htmlFor="name">Name on card :</label>
+            <input required={true} onInput={handleInput} id="name" name="name" type="text" placeholder="Jane Doe" />
 
-          <label htmlFor="card-number">Card number :</label>
-          <input
-            required={true}
-            onInput={handleInput}
-            onKeyDown={handleKeyDown}
-            maxLength="19"
-            id="card"
-            name="card-number"
-            type="text"
-            placeholder="1234 1234 1234 1234"
-          />
-        </fieldset>
+            <label htmlFor="card-number">Card number :</label>
+            <input
+              required={true}
+              onInput={handleInput}
+              onKeyDown={handleKeyDown}
+              maxLength="19"
+              id="card"
+              name="card-number"
+              type="text"
+              placeholder="1234 1234 1234 1234"
+            />
+          </fieldset>
+        </div>
+
         <div className="numbers">
           <fieldset className="month">
             <label htmlFor="month">Month :</label>

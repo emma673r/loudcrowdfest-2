@@ -53,7 +53,14 @@ function Confirmation({ reservationNumber, allPersoData }) {
           </p>
         </div>
       )}
-      {!confirmation && <div className="center-p">The reservation process failed. We're so sorry for the inconvenience, please try again.</div>}
+      {!confirmation && (
+        <div className="center-p">
+          <p className="center-p">The process can take up to 5 minutes to complete.</p>
+          <p className="center-p">
+            If 5 minutes have passed, the reservation process failed. <br></br> We're so sorry for the inconvenience, please try again.
+          </p>
+        </div>
+      )}
       <div className="center-p">
         <PrimaryButton clickAction={goToHome} desc={"Go to index page"}></PrimaryButton>
       </div>
