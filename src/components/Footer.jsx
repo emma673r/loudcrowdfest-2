@@ -2,6 +2,9 @@ import React from "react";
 import FooterSponsors from "./img-components/FooterSponsors";
 
 function Footer() {
+  function validateNews() {
+    alert("You are now subsribed to our newsletter! You'll never miss a sweet deal again :)");
+  }
   return (
     <div className="footer">
       <form>
@@ -9,7 +12,7 @@ function Footer() {
           <label htmlFor="form-newsletter">Newsletter</label>
           <div>
             <input type="text" name="form-newsletter" id="form-email" placeholder="e-mail" />
-            <button>Subscribe</button>
+            <button onClick={validateNews}>Subscribe</button>
           </div>
         </div>
       </form>
