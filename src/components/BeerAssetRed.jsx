@@ -5,7 +5,7 @@ function BeerAssetRed() {
   return (
     <div className="iconAsset">
       <BeerIconRed></BeerIconRed>
-      <h3>LCF Bars</h3>
+      <h3 className="asset-h3">LCF Bars</h3>
       <p className="small-text">Come and taste our LCF x Ti øl collab beers and cocktails.</p>
     </div>
   );

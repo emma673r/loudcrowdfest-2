@@ -4,7 +4,7 @@ function WcAssetRed() {
   return (
     <div className="iconAsset">
       <WcIconRed></WcIconRed>
-      <h3>Clean toilets</h3>
+      <h3 className="asset-h3">Clean toilets</h3>
       <p className="small-text">Nothing worse than dirty toilets. Ours are clean 24/7!</p>
     </div>
   );

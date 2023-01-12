@@ -4,10 +4,8 @@ function BurgerAssetRed() {
   return (
     <div className="iconAsset">
       <BurgerIconRed></BurgerIconRed>
-      <h3>LCF Food</h3>
-      <p className="small-text">
-        Just eat inside of the festival. Get your food delivered to your camp!
-      </p>
+      <h3 className="asset-h3">LCF Food</h3>
+      <p className="small-text">Just eat inside of the festival. Get your food delivered to your camp!</p>
     </div>
   );
 }

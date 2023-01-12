@@ -4,10 +4,8 @@ function DrumAssetRed() {
   return (
     <div className="iconAsset">
       <DrumIconRed></DrumIconRed>
-      <h3>3 stages</h3>
-      <p className="small-text">
-        1 for the punk. 1 for the rap. And 1 where we unite!
-      </p>
+      <h3 className="asset-h3">3 stages</h3>
+      <p className="small-text">1 for the punk. 1 for the rap. And 1 where we unite!</p>
     </div>
   );
 }

@@ -4,7 +4,7 @@ function GameAssetRed() {
   return (
     <div className="iconAsset">
       <GameIconRed></GameIconRed>
-      <h3>LCF s own games</h3>
+      <h3 className="asset-h3">LCF s own games</h3>
       <p className="small-text assetText">Tired of long lines getting boring? Our developpers have created special minigames for you.</p>
     </div>
   );

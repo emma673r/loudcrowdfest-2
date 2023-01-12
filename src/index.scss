@@ -1527,6 +1527,10 @@ aside {
     text-transform: uppercase;
   }
 
+  .asset-h3 {
+    color: $color-main-white;
+  }
+
   button {
     border: 2px solid $color-main-white;
     color: $color-main-white;
@@ -1582,99 +1586,98 @@ aside {
     color: $color-main-white;
   }
 
-  .redAssetsHomePage {
-    h3 {
-      padding-bottom: 0.8vh;
-      letter-spacing: -0.4rem;
-      color: $color-main-white;
-      font-size: 1.5rem;
+  .imgflex {
+    .soloActImg {
+      border: solid 4px $color-psych-yellow;
     }
-  }
-
-  .lineupSamples {
-    .lineup-img {
-      grid-area: 1/2;
-      width: 50vw;
-      height: 50vw;
-      opacity: 0.4;
-      object-fit: cover;
-    }
-  }
-  .oneBand:hover {
-    .lineup-img {
-      opacity: 0.2;
-    }
-    .band-lineup {
-      color: $color-main-red;
-    }
-  }
-}
-
-.imgflex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 7vh;
-  .soloActImg {
-    border: solid 4px $color-main-white;
-    width: 70vw;
-    height: 30vh;
-    object-fit: cover;
   }
 
   //FOOTER STYLE
   .footer {
-    background: $color-main-darkest-red;
-    padding-bottom: 3vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    form {
-      margin: 20px;
-      padding: 20px;
+    background: $color-psych-yellow;
+    color: $color-darkest;
+    button,
+    input {
+      color: $color-darkest;
+      border: solid 2px $color-darkest;
     }
-    .form-group {
-      display: grid;
-      justify-content: center;
-      div {
-        display: flex;
+    button:hover {
+      border: 2px solid $color-psych-green;
+      background-color: $color-psych-pink;
+      color: $color-psych-yellow;
+    }
+  }
+
+  // schedule
+
+  .ScheduleList {
+    .stages {
+      .hours {
+        color: $color-psych-green;
+
+        .line_hor {
+          content: "";
+          border-bottom: solid $color-psych-green 2px;
+        }
+
+        #show_line {
+          border-color: $color-psych-green;
+        }
+      }
+      .stages-names {
+        font-size: $fontsize-4;
       }
     }
 
-    .sponsorsAndContact {
-      display: flex;
-      justify-content: space-between;
-      min-width: fit-content;
-      align-items: start;
-      // align-items: flex-end;
-      // text-align: start;
-      margin: 8px;
-      .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
+    .Stage {
+      border-right: solid 1px $color-psych-green;
+      .Day {
+        // background-color: grey;
+        height: 18vh;
+        width: 28vw;
+        .cancelled {
+          color: $color-psych-pink;
+        }
+        .act {
+          border-left: solid 4px $color-main-white;
+        }
+      }
+    }
+  }
 
-        p {
-          padding-bottom: 4vw;
-          margin: 0;
-        }
-      }
-      .sponsors {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        p {
-          padding-bottom: 4vw;
-          margin: 0;
-        }
+  // lineup
+
+  .lineupSamples {
+    .oneBand:hover {
+      .band-lineup {
+        color: $color-psych-pink;
       }
     }
-    .lcfCopyRight {
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .festivalSponsors {
-      width: 50%;
+  }
+
+  // booking
+  .line-stepper {
+    top: 31.5vh;
+  }
+  .camp-h2 {
+    word-break: normal;
+    display: grid;
+    place-self: center;
+  }
+  .ticket1-div:hover,
+  .ticket2-div:hover,
+  .tents:hover {
+    color: $color-psych-green;
+  }
+
+  .tents:hover {
+    color: $color-psych-pink;
+  }
+
+  .camp-wrap:hover {
+    .camp-desc-wrap,
+    .camp-name-wrap {
+      color: $color-psych-yellow;
     }
   }
 }
