@@ -12,8 +12,13 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import SoloAct from "./pages/SoloAct";
+import { useContext } from "react";
+
+import { ThemeContext } from "./components/Theme";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   const [bands, setBands] = useState([]);
   useEffect(() => {
     async function getBands() {
@@ -24,7 +29,7 @@ function App() {
     getBands();
   }, []);
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <Helmet>
         <title>LoudCrowdFest</title>
       </Helmet>

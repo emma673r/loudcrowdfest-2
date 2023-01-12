@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Day(props) {
-  console.log(props.timeSlot.cancelled);
-  console.log(props.timeSlot);
+  // console.log(props.timeSlot.cancelled);
+  // console.log(props.timeSlot);
 
   const [isBreak, setIsBreak] = useState(false);
 
   const navigate = useNavigate();
 
   function goToSoloAct(e) {
-    console.log(e.target.parentElement.id);
+    // console.log(e.target.parentElement.id);
     let name = e.target.parentElement.id;
     navigate("../soloAct", { state: { name: name } });
   }
@@ -24,7 +24,7 @@ function Day(props) {
 
     isBreak();
   }, []);
-  console.log(isBreak);
+  // console.log(isBreak);
 
   return (
     <div className="Day">
