@@ -1,7 +1,8 @@
 // import Schedule from "./Schedule";
 import Stage from "./Stage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PrimaryButton from "./PrimaryButton";
+import { useRef } from "react";
 
 function ScheduleList(props) {
   let weekDays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
@@ -9,18 +10,25 @@ function ScheduleList(props) {
 
   let dailySchedule = [];
 
+  const [chosenClass, setChosenClass] = useState("");
+
   Object.values(props.stagesSchedule).map((days, index) => {
     dailySchedule.push(days);
   });
 
   return (
     <main className="ScheduleList">
+      <h2>{days}</h2>
       <div className="week-days">
         {weekDays.map((day, index) => {
+          // useEffect(() => {
+          //   days === day ? setChosenClass("chosen") : setChosenClass("");
+          // }, [chosenClass, setChosenClass]);
+
           return (
-            <PrimaryButton key={index} desc={day} clickAction={() => setDays(day)}>
+            <button key={index} className={""} onClick={() => setDays(day)}>
               {day}
-            </PrimaryButton>
+            </button>
           );
         })}
       </div>

@@ -1346,28 +1346,33 @@ aside {
 
   #Svartheim {
     height: 15vh;
-    background-size: 40%;
+    max-height: 150px;
+    background-size: 25%;
     background-position: bottom;
   }
 
   #Nilfheim {
+    max-height: 150px;
+    height: 15vh;
+    background-size: 15%;
+    background-position: bottom;
+  }
+  #Helheim {
+    max-height: 150px;
     height: 15vh;
     background-size: 20%;
     background-position: bottom;
   }
-  #Helheim {
-    height: 15vh;
-    background-size: 35%;
-    background-position: bottom;
-  }
   #Muspelheim {
+    max-height: 150px;
     height: 15vh;
-    background-size: 40%;
+    background-size: 25%;
     background-position: bottom;
   }
   #Alfheim {
+    max-height: 150px;
     height: 15vh;
-    background-size: 25%;
+    background-size: 15%;
     background-position: bottom;
   }
 
