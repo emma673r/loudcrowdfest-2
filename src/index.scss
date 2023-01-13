@@ -1062,12 +1062,14 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 70vh;
   #ticket-h2 {
     padding-bottom: 1.5vh;
   }
   .ticket-1-svg {
+    max-height: 200px;
     width: 30vw;
-    height: 50vw;
+    height: 20vw;
     background-image: url(./assets/bookingIcons/ticket_2.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1098,12 +1100,15 @@ aside {
   justify-content: center;
   align-items: center;
   padding-bottom: 5vh;
+  max-height: 70vh;
   #ticket-h2 {
     padding-bottom: 1.5vh;
   }
+
   .ticket-2-svg {
+    max-height: 200px;
     width: 30vw;
-    height: 50vw;
+    height: 20vw;
     background-image: url(./assets/bookingIcons/ticket_1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1279,6 +1284,7 @@ aside {
   }
 
   .tents {
+    height: 70vh;
     .center-p {
       width: 20ch;
     }
@@ -1321,6 +1327,7 @@ aside {
   }
 
   .camp-wrap {
+    max-height: 30vh;
     .camp-name-wrap {
       width: 20vw;
     }
@@ -1338,24 +1345,24 @@ aside {
   }
 
   #Svartheim {
-    background-size: 60%;
+    background-size: 40%;
     background-position: bottom;
   }
 
   #Nilfheim {
-    background-size: 40%;
+    background-size: 20%;
     background-position: bottom;
   }
   #Helheim {
-    background-size: 50%;
+    background-size: 35%;
     background-position: bottom;
   }
   #Muspelheim {
-    background-size: 60%;
+    background-size: 40%;
     background-position: bottom;
   }
   #Alfheim {
-    background-size: 40%;
+    background-size: 25%;
     background-position: bottom;
   }
 
