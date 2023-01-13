@@ -6,7 +6,7 @@ import { ThemeContext } from "../Theme";
 function BurgerIconRed() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div>{theme === "dark_theme" ? <img src={burgerIconRed} alt="burger icon red" /> : <img src={burgerIconYellow} alt="burger icon yellow" />}</div>
+    <div>{theme === "dark-theme" ? <img src={burgerIconRed} alt="burger icon red" /> : <img src={burgerIconYellow} alt="burger icon yellow" />}</div>
   );
 }
 
