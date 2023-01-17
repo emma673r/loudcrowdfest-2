@@ -1532,6 +1532,7 @@ aside {
   h1 {
     color: $color-psych-pink;
     text-transform: uppercase;
+    // font-size: 4rem;
   }
 
   h2 {
@@ -1673,9 +1674,17 @@ aside {
   }
 
   // booking
+
   .line-stepper {
     top: 31.5vh;
   }
+
+  @media only screen and (min-width: 769px) {
+    .line-stepper {
+      top: 35.5vh;
+    }
+  }
+
   .camp-h2 {
     word-break: normal;
     display: grid;
